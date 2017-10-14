@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>test1</title>
+    
     <script>
+    
         function run1() {
             var myWidth = document.getElementById("container");
             myWidth.style.width = "200px";
@@ -31,6 +33,7 @@
             rePlace.style.height = "100px";
             rePlace.style.width = "100px";
         }
+        
     </script>
 </head>
 <body>
