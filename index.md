@@ -1,37 +1,48 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test1</title>
+    <script>
+        function run1() {
+            var myWidth = document.getElementById("container");
+            myWidth.style.width = "200px";
+            }
 
-You can use the [editor on GitHub](https://github.com/nuexin5257/for-practice/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+        function run2() {
+            var myHeight =  document.getElementById("container");
+            myHeight.style.height = "200px";
+        }
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+        function run3() {
+            var myColor = document.getElementById("container");
+            myColor.style.background = "red";
+        }
 
-### Markdown
+        function run4() {
+            var myDisplay = document.getElementById("container");
+            myDisplay.style.display = "none";
+        }
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        function run5() {
+            var rePlace = document.getElementById("container");
+            rePlace.style.display = "block";
+            rePlace.style.background = "black";
+            rePlace.style.height = "100px";
+            rePlace.style.width = "100px";
+        }
+    </script>
+</head>
+<body>
+<div id="outer" style="width: 500px; margin: 0 auto; padding: 0; text-align: center;">
+    <input type="button" value="变高" onclick="run1()"/>
+    <input type="button" value="变宽" onclick="run2()"/>
+    <input type="button" value="变色" onclick="run3()"/>
+    <input type="button" value="隐藏" onclick="run4()"/>
+    <input type="button" value="重置" onclick="run5()"/>
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nuexin5257/for-practice/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    <div id="container" style="width: 100px; height: 100px; background: black; margin: 10px auto; display: block;">
+    </div>
+</div>
+</body>
+</html>
