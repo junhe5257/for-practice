@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test1kai</title>
+</head>
+<body>
+    <div id="top" style="width: 500px; margin: 0 auto; padding: 0; text-align: center">
+        <input type="button" value="变高" onclick="get.style.height = '200px'"/>
+        <input type="button" value="变宽" onclick="get.style.width = '200px'"/>
+        <input type="button" value="变色" onclick="get.style.background = 'red'"/>
+        <input type="button" value="隐藏" onclick="get.style.display = 'none'"/>
+        <input type="button" value="重置" onclick="get.style.height = '100px';get.style.width = '100px';get.style.background = 'black';get.style.display = 'block'"/>
+    </div>
+    <div id="container" style="width: 100px; height: 100px; margin: 10px auto; background: black; display: block">
+    </div>
+</body>
+<script>
+    function Get() {
+        this.style = document.getElementById("container").style;
+    }
+    var get = new Get();
+</script>
+</html>
